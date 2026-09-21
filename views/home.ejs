@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PM-AJAY Saksham Sahayak</title>
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Google Font for clean typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap
+"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Background Decorative Shapes -->
+    <div class="bg-shape shape-green"></div>
+    <div class="bg-shape shape-orange"></div>
+
+    <!-- Header / Navigation Bar -->
+    <header class="top-nav">
+      <div class="brand">
+        <div class="emblem-placeholder">🏛</div>
+        <div class="brand-text">
+          <strong>PM-AJAY</strong>
+          <span>Ministry of Social Justice and Empowerment</span>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <div class="lang-selector">
+          <i class="fa-solid => fa-globe"></i>
+          <select id="languageSelect">
+            <option value="en">English / हंदी</option>
+            <option value="hi">हंदी</option>
+            <option value="ta">தமிழ்</option>
+            <option value="te">తెలుగు</option>
+          </select>
+        </div>
+        <div class="user-avatar">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="dashboard-container">
+      <!-- Left Hero & Sidebar Info Section -->
+      <section class="left-panel">
+        <div class="hero-title">
+          <h1>PM-AJAY</h1>
+          <h2 class="subtitle">Saksham Sahayak</h2>
+          <p class="description">
+            Empowering SC communities through AI-driven livelihood mapping and
+            NSQF-aligned skilling recommendations under PM-AJAY (GIA Component).
+          </p>
+        </div>
+
+        <nav class="side-menu">
+          <a href="#" class="menu-item active"
+            ><i class="fa-solid fa-user"></i> My Profile</a
+          >
+          <a href="#" class="menu-item"
+            ><i class="fa-solid fa-microphone"></i> Voice Command History</a
+          >
+          <a href="#" class="menu-item"
+            ><i class="fa-solid fa-folder-open"></i> My Applications</a
+          >
+          <a href="#" class="menu-item"
+            ><i class="fa-solid fa-gear"></i> Settings</a
+          >
+        </nav>
+      </section>
+
+      <!-- Main Voice Assistant Interactive Card -->
+      <section class="assistant-card">
+        <h3 class="assistant-heading">How can I help you today?</h3>
+
+        <!-- Voice Trigger Button with Glowing Aura -->
+        <div class="voice-trigger-wrapper">
+          <div class="voice-glow"></div>
+          <button class="mic-button" aria-label="Activate Voice Assistant">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+        </div>
+
+        <!-- Dialogue/Transcript Window -->
+        <div class="transcript-box">
+          <div class="message user-message">
+            <i class="fa-solid fa-user-tag icon"></i>
+            <p>
+              <strong>User asked:</strong> "I need to find a job in my village."
+            </p>
+          </div>
+          <div class="message ai-message">
+            <i class="fa-solid fa-robot icon"></i>
+            <p>
+              <strong>AI Assistant:</strong> "Namaste! I have found 3 skilling
+              programs and 2 local job opportunities for you. Would you like me
+              to tell you more about them?"
+            </p>
+          </div>
+        </div>
+
+        <!-- Recommendation Cards Container -->
+        <div class="recommendations-grid">
+          <!-- Skilling Card -->
+          <div class="card card-skilling">
+            <div class="card-header">
+              <h4>Skilling Program</h4>
+              <span class="badge badge-skilling"
+                ><i class="fa-solid fa-award"></i
+              ></span>
+            </div>
+            <p class="card-title">PMKVY Course: Electrician (NSQF Level 4)</p>
+            <span class="card-subtitle">Near your location</span>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 3 months</span>
+              <span><i class="fa-solid fa-chart-line"></i> High Demand</span>
+            </div>
+            <button class="btn btn-primary">View Details</button>
+          </div>
+
+          <!-- Job Opportunity Card -->
+          <div class="card card-job">
+            <div class="card-header">
+              <h4>Job Opportunity</h4>
+              <span class="badge badge-job"
+                ><i class="fa-solid fa-briefcase"></i
+              ></span>
+            </div>
+            <p class="card-title">Field Technician - Solar</p>
+            <span class="card-subtitle">ABC Solar Co. - Village XYZ</span>
+            <div class="card-meta">
+              <span
+                ><i class="fa-solid fa-indian-rupee-sign"></i> ₹15,000/mo</span
+              >
+              <span><i class="fa-solid fa-location-dot"></i> 5 km away</span>
+            </div>
+            <button class="btn btn-secondary">Apply</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
